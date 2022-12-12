@@ -1,0 +1,324 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px; }
+
+h1 {
+  font-family: 'Crete Round', serif;
+  font-size: 45px;
+  color: #444; }
+
+h2 {
+  color: #444;
+  font-size: 55px; }
+
+h3 {
+  font-size: 30px;
+  color: #444; }
+
+h4 {
+  font-size: 20px;
+  color: #444; }
+  
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.wrapper {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px; }
+
+.wrapper2 {
+  background-color: #6C6;
+  width: 1000px;
+  margin: 0 auto;
+  padding: 0 10px; }
+  
+header {
+  background-color: #ddd;
+  height: 200px; }
+
+header h1 {
+  float: left;
+  margin-top: 15px; }
+
+header nav {
+  float: right;
+  margin-top: 50px; }
+
+header nav ul li {
+  float: left;
+  display: inline-block; }
+
+header nav ul li a {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-right: 20px; }    
+  
+#conferences
+{
+background-color: #ffffff;
+padding: 60px 0 10px 0; 
+}
+
+#conferences h1 {
+  font-family: 'Crete Round', serif;
+  font-size: 50px;
+  color: #444; }
+  
+ 
+#conferences h2 {
+  font-family: 'Crete Round', serif;
+  font-size: 40px;
+  color: #444; }
+  
+    
+#challenges
+{
+background-color: #efefef;
+padding: 60px 0 10px 0; 
+}
+
+#challenges h1 {
+  font-family: 'Crete Round', serif;
+  font-size: 50px;
+  color: #444; }
+  
+ 
+#challenges h2 {
+  font-family: 'Crete Round', serif;
+  font-size: 40px;
+  color: #444; }
+  
+#inscription
+{
+background-color: #ffffff;
+padding: 60px 0 10px 0; 
+}
+
+#sponsors
+{
+background-color: #efefef;
+padding: 60px 0 10px 0; 
+}
+
+#contact
+{
+background-color: #ffffff;
+padding: 60px 0 10px 0; 
+}
+
+#conferences h3 {
+  width: 400px;
+  text-transform: uppercase;
+  margin: 0 auto 20px auto;
+  border-bottom: 1px solid #77B5FE;
+  padding-bottom: 20px;
+  text-align: center; }
+  
+  
+  #challenges h3 {
+  width: 400px;
+  text-transform: uppercase;
+  margin: 0 auto 20px auto;
+  border-bottom: 1px solid #77B5FE;
+  padding-bottom: 20px;
+  text-align: center; }
+  
+  #inscription h3 {
+  width: 400px;
+  text-transform: uppercase;
+  margin: 0 auto 20px auto;
+  border-bottom: 1px solid #77B5FE;
+  padding-bottom: 20px;
+  text-align: center; }
+  
+  #sponsors h3 {
+  width: 400px;
+  text-transform: uppercase;
+  margin: 0 auto 20px auto;
+  border-bottom: 1px solid #77B5FE;
+  padding-bottom: 20px;
+  text-align: center; }
+  
+  #contact h3 {
+  width: 400px;
+  text-transform: uppercase;
+  margin: 0 auto 20px auto;
+  border-bottom: 1px solid #77B5FE;
+  padding-bottom: 20px;
+  text-align: center; }
+  
+  
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+
+
+
+#contact-form
+{
+    font-size: 20px;
+    padding: 40px;
+}
+
+.blue
+{
+    color: #F04;
+}
+.form-control
+{
+    height: 50px;
+    font-size: 18px;
+}
+#contact-form input[type=submit]
+{
+    margin: 40px auto 0px;
+    display: block;
+}
+.comments
+{
+    font-style: italic;
+    font-size: 18px;
+    color: #d82c2e;
+    height: 25px
+}
+#contact-form .thank-you
+{
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+
+
+.carousel-control.left, .carousel-control.right
+{
+background-image: none;
+color: #77B5FE;
+}
+
+.carousel-indicators li
+{
+background-color: #77B5FE
+
+}
+
+.carousel-indicators li.active
+{
+ background-color: #404040
+}
+
+
+#moncarousel .item 
+{
+padding-bottom: 90px;
+padding-left: 70px;
+padding-right: 70px;
+}
+
+
+#moncarousel .item h3
+{
+font-style: italic;
+}
+
+ul,ol
+{
+list-style: none;
+color:#000;
+}
